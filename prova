@@ -1,0 +1,39 @@
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char** argv) {
+using namespace std;
+int importo, selezione,prezzo,resto;
+cout<<"inserire importo";
+cin>>importo;
+cout<<"inserisci selezione";
+cin>>selezione;
+switch (selezione){
+case (1):
+	prezzo=5;
+	if(importo=5)
+		cout<<"hai selezionato 1";
+	else if(importo>5){
+		resto=importo-prezzo;
+		cout<<"hai selezionato 1 il tuo resto e' "<<resto;}
+	else
+		cout<<"importo non sufficiente";
+	break;
+
+case(2):
+	prezzo=3;
+	if(importo = 3)
+		cout<<"hai selezionato 2";
+	else if(importo>3){
+		resto=importo-prezzo;
+		cout<<"hai selezionato 2 e il tuo resto e' "<<resto;}
+	else
+		cout<<"importo non adeguato";
+	break;
+
+default:
+	cout<<"selezionare un opzione";
+}
+	return 0;
+}
